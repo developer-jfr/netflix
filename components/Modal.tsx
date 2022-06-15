@@ -144,6 +144,7 @@ function Modal() {
         </button>
 
         <div className="relative pt-[56.25%]">
+           {/*@ts-ignore */}
           <ReactPlayer
             url={`https://www.youtube.com/watch?v=${trailer}`}
             width="100%"
