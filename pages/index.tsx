@@ -38,7 +38,7 @@ const Home = ({
   products,
 }: Props) => {
   const { user, loading } = useAuth()
-  const subscription = useSubscription(user)
+  const subscription = true
   const showModal = useRecoilValue(modalState)
   const movie = useRecoilValue(movieState)
   const list = useList(user?.uid)
@@ -57,7 +57,7 @@ const Home = ({
         <title>
           {movie?.title || movie?.original_name || 'Home'} - Netflix
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link id='favicon' rel='icon' type='image/ico' href='/nficon2016.png' />
       </Head>
 
       <Header />
