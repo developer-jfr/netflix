@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <RecoilRoot>
       {/* Higher Order Component */}
       <AuthProvider>
+        {/*@ts-ignore */}
         <Component {...pageProps} />
       </AuthProvider>
     </RecoilRoot>
